@@ -12,3 +12,4 @@
 *.jks
 /app/google-services.json
 /app/prod google
+app/.idea
