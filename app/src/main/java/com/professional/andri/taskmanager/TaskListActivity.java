@@ -11,7 +11,7 @@ public class TaskListActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_task_list);
+        setContentView(R.layout.activity_container);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, TaskListFragment.newInstance())
                 .commit();
