@@ -10,8 +10,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.github.yasevich.endlessrecyclerview.EndlessRecyclerView;
 
 import org.parceler.Parcels;
@@ -32,6 +35,8 @@ public class TaskDetailFragment extends Fragment{
     protected TextView mTitle;
     @BindView(R.id.task_detail_tv)
     protected TextView mDetail;
+    @BindView(R.id.task_iv)
+    protected ImageView mImage;
     private Unbinder unbinder;
 
     public static final String ARG_TASK = "ARG_TASK";
@@ -53,7 +58,7 @@ public class TaskDetailFragment extends Fragment{
 
         if(getArguments() != null)
             task = Parcels.unwrap(getArguments().getParcelable(ARG_TASK));
-        
+
         setTaskData();
 
         return view;
@@ -68,5 +73,14 @@ public class TaskDetailFragment extends Fragment{
     public void setTaskData(){
         mTitle.setText(task.getTitle());
         mDetail.setText(task.getDetail());
+
+        Glide.with(this)
+                .load(R.drawable.background)
+                .apply(new RequestOptions()
+                        .centerCrop()
+                        .useAnimationPool(true)
+                        .dontTransform())
+                .into(mImage);
+
     }
 }
