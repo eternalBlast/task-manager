@@ -20,6 +20,9 @@ public class Task {
     }
 
     public static ArrayList<Task> feedTask(int numOfTasks){
+        String[] taskImages = {"task_1", "task_2", "task_3", "task_4", "task_5",
+                                "task_1", "task_2", "task_3", "task_4", "task_5"};
+
         String[] taskTitles = { "Task #A1", "Task #A2", "Task #A3",
                 "Task #B1", "Task #B2", "Task #B3",
                 "Task #C1", "Task #C2", "Task #C3",
@@ -37,24 +40,10 @@ public class Task {
             task.id = "" + (i + 1);
             task.title = taskTitles[i];
             task.detail = taskDetails[i];
+            task.image = taskImages[i];
             tasks.add(task);
         }
         return tasks;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDetail() {
-        return detail;
-    }
-
-    public void setDetail(String detail) {
-        this.detail = detail;
-    }
 }

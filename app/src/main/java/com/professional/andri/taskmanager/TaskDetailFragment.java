@@ -1,12 +1,9 @@
 package com.professional.andri.taskmanager;
 
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,11 +12,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.github.yasevich.endlessrecyclerview.EndlessRecyclerView;
 
 import org.parceler.Parcels;
-
-import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -29,7 +23,7 @@ import butterknife.Unbinder;
  * Created by Andri on 19/11/2017.
  */
 
-public class TaskDetailFragment extends Fragment{
+public class TaskDetailFragment extends Fragment {
 
     @BindView(R.id.task_title_tv)
     protected TextView mTitle;
@@ -56,7 +50,7 @@ public class TaskDetailFragment extends Fragment{
         final View view = inflater.inflate(R.layout.fragment_task_detail, container, false);
         unbinder = ButterKnife.bind(this, view);
 
-        if(getArguments() != null)
+        if (getArguments() != null)
             task = Parcels.unwrap(getArguments().getParcelable(ARG_TASK));
 
         setTaskData();
@@ -70,11 +64,11 @@ public class TaskDetailFragment extends Fragment{
         super.onDestroyView();
     }
 
-    public void setTaskData(){
-        mTitle.setText(task.getTitle());
-        mDetail.setText(task.getDetail());
+    public void setTaskData() {
+        mTitle.setText(task.title);
+        mDetail.setText(task.detail);
 
-        int id = mImage.getContext().getResources().getIdentifier("task_1", "drawable", mImage.getContext().getPackageName());
+        int id = mImage.getContext().getResources().getIdentifier(task.image, "drawable", mImage.getContext().getPackageName());
 
         Glide.with(this)
                 .load(id)
