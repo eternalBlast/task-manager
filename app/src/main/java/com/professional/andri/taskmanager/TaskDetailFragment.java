@@ -74,8 +74,10 @@ public class TaskDetailFragment extends Fragment{
         mTitle.setText(task.getTitle());
         mDetail.setText(task.getDetail());
 
+        int id = mImage.getContext().getResources().getIdentifier("task_1", "drawable", mImage.getContext().getPackageName());
+
         Glide.with(this)
-                .load(R.drawable.background)
+                .load(id)
                 .apply(new RequestOptions()
                         .centerCrop()
                         .useAnimationPool(true)
