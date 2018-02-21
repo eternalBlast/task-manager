@@ -10,7 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="633e838d-2059-4053-b4b7-636473b65e9b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java" afterPath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/item_task.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/item_task.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,20 +36,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="TaskListFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="29" column="46" lean-forward="false" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2460#2461#0" expanded="false" />
-                <element signature="e#2534#2535#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TaskAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,6 +45,19 @@
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="item_task.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_task.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
@@ -72,12 +73,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskDetailFragment.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TaskDetailFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="369">
+              <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,11 +144,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskDetailActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TaskDetailActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+              <caret line="17" column="75" lean-forward="false" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -1913,13 +1916,13 @@
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_task_detail.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/item_task.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListFragment.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/Task.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/item_task.xml" />
       </list>
     </option>
   </component>
@@ -1966,7 +1969,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../dealjava-android" />
-    <property name="SearchEverywhereHistoryKey" value="bui&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/build.gradle&#10;Android&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/AndroidManifest.xml&#10;Main&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/MainActivity.java&#10;build.g&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/build.gradle&#10;.gi&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/.gitignore&#10;.git&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/.gitignore&#10;.g&#9;FILE&#9;file://D:/ANDRI/ANDROID/dealmedan-android/.gitignore&#10;AndroidMan&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/AndroidManifest.xml" />
+    <property name="SearchEverywhereHistoryKey" value="item_task&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/res/layout/item_task.xml&#10;bui&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/build.gradle&#10;Android&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/AndroidManifest.xml&#10;Main&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/MainActivity.java&#10;build.g&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/build.gradle&#10;.gi&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/.gitignore&#10;.git&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/.gitignore&#10;.g&#9;FILE&#9;file://D:/ANDRI/ANDROID/dealmedan-android/.gitignore&#10;AndroidMan&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/AndroidManifest.xml" />
     <property name="device.picker.selection" value="192.168.252.101:5555" />
     <property name="android.profiler.active" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -2069,7 +2072,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519190938968" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519194240406" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2117,7 +2120,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519190938969" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519194240407" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2279,7 +2282,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519190938970" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519194240407" />
       </method>
     </configuration>
     <list size="1">
@@ -2335,7 +2338,7 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921588" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27679622" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2682,17 +2685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_task.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -2719,30 +2711,6 @@
           <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../dealmedan-android/app/src/main/java/com/dealmedan/android/ui/DealListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="78" column="2" lean-forward="false" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#7869#7870#0" expanded="false" />
-            <element signature="e#7902#7903#0" expanded="false" />
-            <element signature="e#9284#9748#0" expanded="false" />
-            <element signature="e#9747#9748#0" expanded="false" />
-            <element signature="e#9781#10231#0" expanded="false" />
-            <element signature="e#10230#10231#0" expanded="false" />
-            <element signature="e#10264#10378#0" expanded="false" />
-            <element signature="e#10377#10378#0" expanded="false" />
-            <element signature="e#12012#13824#0" expanded="false" />
-            <element signature="e#13823#13824#0" expanded="false" />
-            <element signature="e#13944#14110#0" expanded="false" />
-            <element signature="e#14109#14110#0" expanded="false" />
-            <element signature="e#32229#32452#0" expanded="false" />
-            <element signature="e#32451#32452#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2786,19 +2754,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="294">
+          <caret line="17" column="75" lean-forward="false" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailActivity.java">
+    <entry file="file://$PROJECT_DIR$/../../dealmedan-android/app/src/main/java/com/dealmedan/android/ui/DealListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        <state relative-caret-position="231">
+          <caret line="78" column="2" lean-forward="false" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#7869#7870#0" expanded="false" />
+            <element signature="e#7902#7903#0" expanded="false" />
+            <element signature="e#9284#9748#0" expanded="false" />
+            <element signature="e#9747#9748#0" expanded="false" />
+            <element signature="e#9781#10231#0" expanded="false" />
+            <element signature="e#10230#10231#0" expanded="false" />
+            <element signature="e#10264#10378#0" expanded="false" />
+            <element signature="e#10377#10378#0" expanded="false" />
+            <element signature="e#12012#13824#0" expanded="false" />
+            <element signature="e#13823#13824#0" expanded="false" />
+            <element signature="e#13944#14110#0" expanded="false" />
+            <element signature="e#14109#14110#0" expanded="false" />
+            <element signature="e#32229#32452#0" expanded="false" />
+            <element signature="e#32451#32452#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_task.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

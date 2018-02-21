@@ -53,6 +53,8 @@ public class TaskDetailFragment extends Fragment{
 
         if(getArguments() != null)
             task = Parcels.unwrap(getArguments().getParcelable(ARG_TASK));
+        
+        setTaskData();
 
         return view;
     }
@@ -61,5 +63,10 @@ public class TaskDetailFragment extends Fragment{
     public void onDestroyView() {
         unbinder.unbind();
         super.onDestroyView();
+    }
+
+    public void setTaskData(){
+        mTitle.setText(task.getTitle());
+        mDetail.setText(task.getDetail());
     }
 }
