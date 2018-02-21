@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import org.parceler.Parcels;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +40,9 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
         holder.mText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                view.getContext().startActivity(new Intent(view.getContext(), TaskDetailActivity.class));
+                Intent intent = new Intent(view.getContext(), TaskDetailActivity.class);
+                intent.putExtra("task", Parcels.wrap(task));
+                view.getContext().startActivity(intent);
             }
         });
         Log.d("TAG", "SADASDASD");

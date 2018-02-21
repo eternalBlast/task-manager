@@ -3,6 +3,8 @@ package com.professional.andri.taskmanager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import org.parceler.Parcels;
+
 /**
  * Created by Andri on 18/11/2017.
  */
@@ -12,6 +14,8 @@ public class TaskDetailActivity extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_container);
+
+        Task task = (Task) Parcels.unwrap(getIntent().getParcelableExtra("task"));
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, TaskDetailFragment.newInstance())
                 .commit();

@@ -1,6 +1,6 @@
 package com.professional.andri.taskmanager;
 
-import android.util.Log;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 
@@ -8,11 +8,16 @@ import java.util.ArrayList;
  * Created by Andri on 19/11/2017.
  */
 
+@Parcel
 public class Task {
-    private String id;
-    private String title;
-    private String detail;
-    private String image;
+    String id;
+    String title;
+    String detail;
+    String image;
+
+    public Task(){
+
+    }
 
     public static ArrayList<Task> feedTask(int numOfTasks){
         String[] taskTitles = { "Task #A1", "Task #A2", "Task #A3",
