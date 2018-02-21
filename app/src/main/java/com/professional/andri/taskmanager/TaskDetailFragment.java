@@ -6,16 +6,21 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.yasevich.endlessrecyclerview.EndlessRecyclerView;
+
+import org.parceler.Parcels;
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 /**
  * Created by Andri on 19/11/2017.
@@ -23,17 +28,38 @@ import butterknife.ButterKnife;
 
 public class TaskDetailFragment extends Fragment{
 
-    public static TaskDetailFragment newInstance() {
-        return new TaskDetailFragment();
+    @BindView(R.id.task_title_tv)
+    protected TextView mTitle;
+    @BindView(R.id.task_detail_tv)
+    protected TextView mDetail;
+    private Unbinder unbinder;
+
+    public static final String ARG_TASK = "ARG_TASK";
+    private Task task;
+
+    public static TaskDetailFragment newInstance(Task task) {
+        final Bundle bundle = new Bundle();
+        bundle.putParcelable(ARG_TASK, Parcels.wrap(task));
+        final TaskDetailFragment fragment = new TaskDetailFragment();
+        fragment.setArguments(bundle);
+        return fragment;
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_task_detail, container, false);
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
+
+        if(getArguments() != null)
+            task = Parcels.unwrap(getArguments().getParcelable(ARG_TASK));
 
         return view;
     }
 
+    @Override
+    public void onDestroyView() {
+        unbinder.unbind();
+        super.onDestroyView();
+    }
 }

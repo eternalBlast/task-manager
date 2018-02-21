@@ -17,7 +17,7 @@ public class TaskDetailActivity extends BaseActivity {
 
         Task task = (Task) Parcels.unwrap(getIntent().getParcelableExtra("task"));
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, TaskDetailFragment.newInstance())
+                .replace(R.id.container, TaskDetailFragment.newInstance(task))
                 .commit();
     }
 }

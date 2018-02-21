@@ -45,7 +45,6 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
                 view.getContext().startActivity(intent);
             }
         });
-        Log.d("TAG", "SADASDASD");
     }
 
     @Override
