@@ -3,4 +3,9 @@
     <string name="username">Username</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
+    <string name="waiting_approval">Waiting for Approve</string>
+    <string name="on_progress">On Progress</string>
+    <string name="completed">Completed</string>
+    <string name="not_completed">Not completed</string>
+    <string name="need_discuss">Need discuss</string>
 </resources>

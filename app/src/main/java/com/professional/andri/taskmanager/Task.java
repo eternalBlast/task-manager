@@ -1,8 +1,11 @@
 package com.professional.andri.taskmanager;
 
+import android.util.Log;
+
 import org.parceler.Parcel;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by Andri on 19/11/2017.
@@ -14,6 +17,7 @@ public class Task {
     String title;
     String detail;
     String image;
+    int status;
 
     public Task(){
 
@@ -50,6 +54,8 @@ public class Task {
             task.title = taskTitles[i];
             task.detail = taskDetails[i];
             task.image = taskImages[i];
+            Random random = new Random();
+            task.status = random.nextInt(4);
             tasks.add(task);
         }
         return tasks;

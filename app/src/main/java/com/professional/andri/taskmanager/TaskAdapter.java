@@ -36,8 +36,9 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         final Task task = mTasks.get(position);
-        holder.mText.setText(task.title);
-        holder.mText.setOnClickListener(new View.OnClickListener() {
+        holder.mTitle.setText(task.title);
+        holder.mStatus.setText(task.statusDesc);
+        holder.mTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), TaskDetailActivity.class);
@@ -45,6 +46,9 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
                 view.getContext().startActivity(intent);
             }
         });
+        final TextAccent taskAccent = TaskStatus.getTextAccent(mContext, task.status);
+        holder.mStatus.setText(taskAccent.getText());
+        holder.mStatus.setTextColor(taskAccent.getColor());
     }
 
     @Override
@@ -59,7 +63,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.task_title)
-        protected TextView mText;
+        protected TextView mTitle;
         @BindView(R.id.task_status)
         protected TextView mStatus;
 
