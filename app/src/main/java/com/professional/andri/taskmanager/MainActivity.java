@@ -32,9 +32,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ArrayList<Task> tasks = Task.feedTask(10);
-        Log.d("TAG", tasks.size() + "");
-
         sendNotification();
     }
 

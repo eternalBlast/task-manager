@@ -46,7 +46,7 @@ public class TaskListFragment extends Fragment implements EndlessRecyclerView.Pa
 //        for (int i = 0; i < 10; i++) {
 //            mTasks.add(new Task());
 //        }
-        ArrayList<Task> mTasks = Task.feedTask(10);
+        ArrayList<Task> mTasks = Task.feedTask(20);
         mAdapter = new TaskAdapter(getContext(), mTasks);
         mTaskRV.setAdapter(mAdapter);
         mTaskRV.setLayoutManager(new LinearLayoutManager(getContext()));

@@ -58,8 +58,10 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.textView)
+        @BindView(R.id.task_title)
         protected TextView mText;
+        @BindView(R.id.task_status)
+        protected TextView mStatus;
 
         ViewHolder(View view) {
             super(view);
