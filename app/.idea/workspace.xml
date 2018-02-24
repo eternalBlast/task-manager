@@ -106,11 +106,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskDetailActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TaskDetailActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
               <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskDetailFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,20 +132,6 @@
             <state relative-caret-position="210">
               <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../merchant-center/app/src/main/java/com/dealmedan/merchantcenter/ui/adapter/LogAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1778#1779#0" expanded="false" />
-                <element signature="e#1829#1830#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -2175,7 +2171,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../dealjava-android" />
-    <property name="SearchEverywhereHistoryKey" value="TaskDe&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/TaskDetailActivity.java&#10;Main&#9;PSI&#9;JAVA://com.professional.andri.taskmanager.MainActivity&#10;.giti&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/.gitignore&#10;.gi&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/.gitignore&#10;MainA&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/MainActivity.java&#10;Task&#9;PSI&#9;JAVA://com.professional.andri.taskmanager.Task&#10;android device mon&#9;ACTION&#9;Android.RunDdms&#10;Android&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/AndroidManifest.xml&#10;item_&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/res/layout/item_task.xml&#10;item_task&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/res/layout/item_task.xml&#10;bui&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/build.gradle&#10;build.g&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/build.gradle&#10;.git&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/.gitignore&#10;.g&#9;FILE&#9;file://D:/ANDRI/ANDROID/dealmedan-android/.gitignore&#10;AndroidMan&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/AndroidManifest.xml" />
+    <property name="SearchEverywhereHistoryKey" value="TaskDeta&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java&#10;TaskDe&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/TaskDetailActivity.java&#10;Main&#9;PSI&#9;JAVA://com.professional.andri.taskmanager.MainActivity&#10;.giti&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/.gitignore&#10;.gi&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/.gitignore&#10;MainA&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/MainActivity.java&#10;Task&#9;PSI&#9;JAVA://com.professional.andri.taskmanager.Task&#10;android device mon&#9;ACTION&#9;Android.RunDdms&#10;Android&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/AndroidManifest.xml&#10;item_&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/res/layout/item_task.xml&#10;item_task&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/res/layout/item_task.xml&#10;bui&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/build.gradle&#10;build.g&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/build.gradle&#10;.git&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/.gitignore&#10;.g&#9;FILE&#9;file://D:/ANDRI/ANDROID/dealmedan-android/.gitignore&#10;AndroidMan&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/AndroidManifest.xml" />
     <property name="device.picker.selection" value="192.168.252.101:5555" />
     <property name="android.profiler.active" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -2279,7 +2275,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519485076099" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519485094057" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2327,7 +2323,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519485076099" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519485094057" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2510,7 +2506,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519485076100" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519485094058" />
       </method>
     </configuration>
     <list size="1">
@@ -2674,13 +2670,6 @@
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1113">
-          <caret line="70" column="76" lean-forward="false" selection-start-line="70" selection-start-column="76" selection-end-line="70" selection-end-column="76" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/drawable/task_1.jpg">
@@ -3061,6 +3050,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
       </provider>
