@@ -3,20 +3,25 @@ package com.professional.andri.taskmanager;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
 import android.util.Log;
 import android.view.View;
 
-import java.util.ArrayList;
+import com.professional.andri.taskmanager.model.Task;
+import com.professional.andri.taskmanager.realm.TaskRealm;
+import com.professional.andri.taskmanager.realm.UserRealm;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import io.realm.Realm;
+import io.realm.RealmQuery;
+import io.realm.RealmResults;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     @BindView(R.id.login_button)
     protected AppCompatButton mLogin;
     private Unbinder unbinder;
@@ -33,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         sendNotification();
+
+//        Realm realm = Realm.getDefaultInstance();
+//        RealmQuery taskRealmQuery = realm.where(TaskRealm.class).equalTo("id", "2");
+//        Task task = taskRealmQuery.findFirst();
+//        Log.d("TAG", taskRealmQuery.findFirst() + " SINIIII");
+//        feedData();
     }
 
     public void sendNotification() {
@@ -70,4 +81,15 @@ public class MainActivity extends AppCompatActivity {
         unbinder.unbind();
         super.onDestroy();
     }
+
+//    private void feedData(){
+//        Realm realm = Realm.getDefaultInstance();
+//        realm.beginTransaction();
+//        UserRealm userRealm = new UserRealm();
+//        userRealm.setId(1);
+//        userRealm.setName("Andri");
+//        userRealm.setLevel("Manager");
+//        final UserRealm managedUser = realm.copyToRealm(userRealm);
+//        realm.commitTransaction();
+//    }
 }

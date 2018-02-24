@@ -1,6 +1,4 @@
-package com.professional.andri.taskmanager;
-
-import android.util.Log;
+package com.professional.andri.taskmanager.model;
 
 import org.parceler.Parcel;
 
@@ -13,11 +11,12 @@ import java.util.Random;
 
 @Parcel
 public class Task {
-    String id;
-    String title;
-    String detail;
-    String image;
-    int status;
+    public String id;
+    public String title;
+    public String detail;
+    public String image;
+    public int status;
+    public User user;
 
     public Task(){
 

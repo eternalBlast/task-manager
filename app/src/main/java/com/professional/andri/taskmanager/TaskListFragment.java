@@ -1,22 +1,29 @@
 package com.professional.andri.taskmanager;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.github.yasevich.endlessrecyclerview.EndlessRecyclerView;
+import com.professional.andri.taskmanager.adapter.RealmTaskAdapter;
+import com.professional.andri.taskmanager.adapter.TaskAdapter;
+import com.professional.andri.taskmanager.model.Task;
+import com.professional.andri.taskmanager.realm.TaskRealm;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import io.realm.RealmResults;
 
 /**
  * Created by Andri on 19/11/2017.
@@ -33,8 +40,17 @@ public class TaskListFragment extends Fragment implements EndlessRecyclerView.Pa
 
     private final Handler handler = new Handler();
 
+    private TaskListActivity mActivity;
+    private RealmResults<TaskRealm> taskRealms;
+
     public static TaskListFragment newInstance() {
         return new TaskListFragment();
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mActivity = (TaskListActivity)context;
     }
 
     @Nullable
@@ -46,12 +62,15 @@ public class TaskListFragment extends Fragment implements EndlessRecyclerView.Pa
 //        for (int i = 0; i < 10; i++) {
 //            mTasks.add(new Task());
 //        }
-        ArrayList<Task> mTasks = Task.feedTask(20);
-        mAdapter = new TaskAdapter(getContext(), mTasks);
+
+        taskRealms = mActivity.getRealm().where(TaskRealm.class).findAll();
+        RealmTaskAdapter realmTaskAdapter = new RealmTaskAdapter(taskRealms);
+//        ArrayList<Task> mTasks = Task.feedTask(20);
+        mAdapter = new TaskAdapter(getContext());
+        mAdapter.setRealmAdapter(realmTaskAdapter);
         mTaskRV.setAdapter(mAdapter);
         mTaskRV.setLayoutManager(new LinearLayoutManager(getContext()));
         mTaskRV.setProgressView(R.layout.item_progress);
-
         mTaskRV.setPager(this);
         mAdapter.notifyDataSetChanged();
         addItems();

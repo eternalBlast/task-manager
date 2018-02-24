@@ -3,6 +3,8 @@ package com.professional.andri.taskmanager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import com.professional.andri.taskmanager.model.Task;
+
 import org.parceler.Parcels;
 
 /**
