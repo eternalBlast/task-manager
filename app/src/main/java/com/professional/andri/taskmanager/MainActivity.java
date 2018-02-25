@@ -4,13 +4,13 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.NotificationCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
-import com.professional.andri.taskmanager.model.Task;
 import com.professional.andri.taskmanager.realm.TaskRealm;
 import com.professional.andri.taskmanager.realm.UserRealm;
 
@@ -18,22 +18,28 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import io.realm.Realm;
-import io.realm.RealmQuery;
 import io.realm.RealmResults;
 
 public class MainActivity extends BaseActivity {
     @BindView(R.id.login_button)
     protected AppCompatButton mLogin;
+    @BindView(R.id.username_input)
+    protected TextInputEditText mUsername;
+    @BindView(R.id.password_input)
+    protected TextInputEditText mPassword;
     private Unbinder unbinder;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         unbinder = ButterKnife.bind(this);
+        RealmResults<UserRealm> userRealms = getRealm().where(UserRealm.class).findAll();
+
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, TaskListActivity.class));
+                validate();
             }
         });
 
@@ -42,7 +48,7 @@ public class MainActivity extends BaseActivity {
 //        Realm realm = Realm.getDefaultInstance();
 //        RealmQuery taskRealmQuery = realm.where(TaskRealm.class).equalTo("id", "2");
 //        Task task = taskRealmQuery.findFirst();
-//        Log.d("TAG", taskRealmQuery.findFirst() + " SINIIII");
+//        Log.d("TAG", realm.where(TaskRealm.class).equalTo("id", "23").findFirst().getImage() + " SINIIII");
 //        feedData();
     }
 
@@ -82,14 +88,45 @@ public class MainActivity extends BaseActivity {
         super.onDestroy();
     }
 
-//    private void feedData(){
-//        Realm realm = Realm.getDefaultInstance();
-//        realm.beginTransaction();
+    private void feedData() {
+        Realm realm = Realm.getDefaultInstance();
+        realm.beginTransaction();
+        for (int i = 1; i <= 25; i++) {
+            TaskRealm taskRealm = getRealm().where(TaskRealm.class).equalTo("id", "" + i).findFirst();
+            if (i % 5 != 0)
+                taskRealm.setImage("task_" + (i % 5));
+            else
+                taskRealm.setImage("task_" + 5);
+        }
 //        UserRealm userRealm = new UserRealm();
 //        userRealm.setId(1);
 //        userRealm.setName("Andri");
 //        userRealm.setLevel("Manager");
 //        final UserRealm managedUser = realm.copyToRealm(userRealm);
-//        realm.commitTransaction();
-//    }
+        realm.commitTransaction();
+    }
+
+    private void validate() {
+        if(mUsername.getText().toString().equals("")) {
+            Toast.makeText(this, "Username is required", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(mPassword.getText().toString().equals("")) {
+            Toast.makeText(this, "Password is required", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        UserRealm userRealm = getRealm().where(UserRealm.class)
+                .equalTo("username", mUsername.getText().toString())
+                .findFirst();
+
+        if (userRealm == null) {
+            Toast.makeText(this, "Username doesn't exist", Toast.LENGTH_SHORT).show();
+        } else {
+            if (mPassword.getText().toString().equals(userRealm.getPassword()))
+                startActivity(new Intent(MainActivity.this, TaskListActivity.class));
+            else
+                Toast.makeText(this, "Password doesn't matched", Toast.LENGTH_SHORT).show();
+        }
+    }
 }

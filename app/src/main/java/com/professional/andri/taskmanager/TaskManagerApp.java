@@ -3,6 +3,8 @@ package com.professional.andri.taskmanager;
 import android.app.Application;
 import android.util.Log;
 
+import com.professional.andri.taskmanager.migration.TaskMigration;
+
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 
@@ -13,7 +15,8 @@ public class TaskManagerApp extends Application {
     Realm.init(this);
       RealmConfiguration myConfig = new RealmConfiguration.Builder()
               .name("task_db.realm")
-              .schemaVersion(2)
+              .schemaVersion(3)
+              .migration(new TaskMigration())
               .build();
       Realm.setDefaultConfiguration(myConfig);
 //      Realm.deleteRealm(myConfig);

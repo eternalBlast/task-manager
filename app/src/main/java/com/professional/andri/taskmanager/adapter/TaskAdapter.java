@@ -43,12 +43,19 @@ public class TaskAdapter extends RealmRecyclerViewAdapter<TaskRealm, TaskAdapter
     public void onBindViewHolder(ViewHolder holder, int position) {
 //        final Task task = mTasks.get(position);
         final TaskRealm task = getItem(position);
+//        final Task task = new Task();
+//        task.id = taskRealm.getId();
+//        task.title = taskRealm.getTitle();
+//        task.detail = taskRealm.getDetail();
+//        task.image = taskRealm.getImage();
+//        task.status = taskRealm.getStatus();
         holder.mTitle.setText(task.getTitle());
         holder.mTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), TaskDetailActivity.class);
-                intent.putExtra("task", Parcels.wrap(task));
+//                intent.putExtra("task", Parcels.wrap(task));
+                intent.putExtra("task_id", task.getId());
                 view.getContext().startActivity(intent);
             }
         });

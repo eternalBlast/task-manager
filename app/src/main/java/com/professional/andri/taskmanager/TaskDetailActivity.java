@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.professional.andri.taskmanager.model.Task;
+import com.professional.andri.taskmanager.realm.TaskRealm;
 
 import org.parceler.Parcels;
 
@@ -17,9 +18,10 @@ public class TaskDetailActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_container);
 
-        Task task = Parcels.unwrap(getIntent().getParcelableExtra("task"));
+//        TaskRealm task = Parcels.unwrap(getIntent().getParcelableExtra("task"));
+        String task_id = getIntent().getStringExtra("task_id");
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, TaskDetailFragment.newInstance(task))
+                .replace(R.id.container, TaskDetailFragment.newInstance(task_id))
                 .commit();
     }
 }

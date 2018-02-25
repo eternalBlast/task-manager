@@ -1,12 +1,20 @@
 package com.professional.andri.taskmanager.realm;
 
+import com.professional.andri.taskmanager.model.User;
+
+import org.parceler.Parcel;
+
 import io.realm.RealmObject;
+import io.realm.TaskRealmRealmProxy;
 import io.realm.annotations.PrimaryKey;
 
 /**
  * Created by Andri on 2/23/2018.
  */
 
+//@Parcel(implementations = { TaskRealmRealmProxy.class },
+//        value = Parcel.Serialization.FIELD,
+//        analyze = { TaskRealm.class })
 public class TaskRealm extends RealmObject {
     @PrimaryKey
     private String id;
@@ -54,5 +62,13 @@ public class TaskRealm extends RealmObject {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    public UserRealm getUser() {
+        return user;
+    }
+
+    public void setUser(UserRealm user) {
+        this.user = user;
     }
 }

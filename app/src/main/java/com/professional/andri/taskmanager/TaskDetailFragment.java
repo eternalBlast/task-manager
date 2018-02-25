@@ -1,9 +1,11 @@
 package com.professional.andri.taskmanager;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.professional.andri.taskmanager.model.Task;
+import com.professional.andri.taskmanager.realm.TaskRealm;
 
 import org.parceler.Parcels;
 
@@ -35,14 +38,30 @@ public class TaskDetailFragment extends Fragment {
     private Unbinder unbinder;
 
     public static final String ARG_TASK = "ARG_TASK";
-    private Task task;
+    private TaskRealm task;
+    private String task_id;
+    private TaskDetailActivity mActivity;
 
-    public static TaskDetailFragment newInstance(Task task) {
+    public static TaskDetailFragment newInstance(TaskRealm task) {
         final Bundle bundle = new Bundle();
         bundle.putParcelable(ARG_TASK, Parcels.wrap(task));
         final TaskDetailFragment fragment = new TaskDetailFragment();
         fragment.setArguments(bundle);
         return fragment;
+    }
+
+    public static TaskDetailFragment newInstance(String taskId) {
+        final Bundle bundle = new Bundle();
+        bundle.putString(ARG_TASK, taskId);
+        final TaskDetailFragment fragment = new TaskDetailFragment();
+        fragment.setArguments(bundle);
+        return fragment;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mActivity = (TaskDetailActivity)context;
     }
 
     @Nullable
@@ -52,8 +71,12 @@ public class TaskDetailFragment extends Fragment {
         unbinder = ButterKnife.bind(this, view);
 
         if (getArguments() != null)
-            task = Parcels.unwrap(getArguments().getParcelable(ARG_TASK));
+            task_id = getArguments().getString(ARG_TASK);
 
+        task = mActivity.getRealm().where(TaskRealm.class).equalTo("id", task_id).findFirst();
+//            task = Parcels.unwrap(getArguments().getParcelable(ARG_TASK));
+
+        Log.d("TAG", task.getTitle() + " SOMOOOO");
         setTaskData();
 
         return view;
@@ -66,10 +89,10 @@ public class TaskDetailFragment extends Fragment {
     }
 
     public void setTaskData() {
-        mTitle.setText(task.title);
-        mDetail.setText(task.detail);
+        mTitle.setText(task.getTitle());
+        mDetail.setText(task.getDetail());
 
-        int id = mImage.getContext().getResources().getIdentifier(task.image, "drawable", mImage.getContext().getPackageName());
+        int id = mImage.getContext().getResources().getIdentifier(task.getImage(), "drawable", mImage.getContext().getPackageName());
 
         Glide.with(this)
                 .load(id)
