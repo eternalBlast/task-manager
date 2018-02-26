@@ -13,7 +13,7 @@ public class AddUserActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_container);
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, AddUserFragment.newInstance())
+                .replace(R.id.container, UserListFragment.newInstance())
                 .commit();
     }
 }

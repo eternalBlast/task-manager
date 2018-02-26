@@ -1,6 +1,8 @@
 package com.professional.andri.taskmanager;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
@@ -44,6 +46,7 @@ public class AddUserFragment extends Fragment {
     protected TextInputEditText mName;
     @BindView(R.id.save_button)
     protected AppCompatButton mSave;
+    private AlertDialog mAlert;
 
     private AddUserActivity mActivity;
 
@@ -70,6 +73,8 @@ public class AddUserFragment extends Fragment {
                 android.R.layout.simple_spinner_item, arraySpinner);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mLevel.setAdapter(adapter);
+
+        mAlert = new AlertDialog.Builder(mActivity).create();
 
         mSave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,8 +117,21 @@ public class AddUserFragment extends Fragment {
                 userRealm.setName(mName.getText().toString());
                 userRealm.setPassword(mPassword.getText().toString());
                 userRealm.setLevel(mLevel.getSelectedItem().toString());
+                showSuccessMessage();
                 Log.d("TAGGG", mActivity.getRealm().where(UserRealm.class).findAll().size()+ " SIZEEE");
             }
         });
+    }
+
+    private void showSuccessMessage(){
+        mAlert.setTitle("Success");
+        mAlert.setMessage("The user has been added");
+        mAlert.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+        mAlert.show();
     }
 }
