@@ -12,8 +12,9 @@
   <component name="ChangeListManager">
     <list default="true" id="633e838d-2059-4053-b4b7-636473b65e9b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java" afterPath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListFragment.java" afterPath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MainActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,11 +54,9 @@
       <file leaf-file-name="TaskListFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="100" column="39" lean-forward="false" selection-start-line="100" selection-start-column="39" selection-end-line="100" selection-end-column="39" />
+            <state relative-caret-position="567">
+              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
-                <element signature="e#2880#3081#0" expanded="true" />
-                <element signature="e#3080#3081#0" expanded="true" />
                 <element signature="e#3269#3270#0" expanded="true" />
                 <element signature="e#3343#3344#0" expanded="true" />
               </folding>
@@ -65,166 +64,109 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/adapter/TaskAdapter.java">
+      <file leaf-file-name="AddUserFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/AddUserFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="74" column="16" lean-forward="false" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+            <state relative-caret-position="1443">
+              <caret line="115" column="13" lean-forward="true" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
+              <folding>
+                <element signature="e#2555#2707#0" expanded="true" />
+                <element signature="e#2706#2707#0" expanded="true" />
+                <element signature="e#3654#4423#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RealmQuery.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/realm-android-library/4.3.3/2cf324f3191d8d3b7afacc6967aa7f40ea5409e3/realm-android-library-4.3.3-sources.jar!/io/realm/RealmQuery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="41769">
+              <caret line="2020" column="27" lean-forward="false" selection-start-line="2020" selection-start-column="27" selection-end-line="2020" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WizardActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../merchant-center/app/src/main/java/com/dealmedan/merchantcenter/ui/activity/WizardActivity.java">
+      <file leaf-file-name="Merchant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../merchant-center/app/src/main/java/com/dealmedan/merchantcenter/model/Merchant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2499">
-              <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#7018#7019#0" expanded="false" />
-                <element signature="e#7085#7086#0" expanded="false" />
-                <element signature="e#7475#7476#0" expanded="false" />
-                <element signature="e#7552#7553#0" expanded="false" />
-                <element signature="e#8099#8100#0" expanded="false" />
-                <element signature="e#8167#8168#0" expanded="false" />
-                <element signature="e#9963#9964#0" expanded="false" />
-                <element signature="e#9992#9993#0" expanded="false" />
-                <element signature="e#10622#10623#0" expanded="false" />
-                <element signature="e#10666#10667#0" expanded="false" />
-                <element signature="e#12126#12127#0" expanded="false" />
-                <element signature="e#12149#12150#0" expanded="false" />
-                <element signature="e#13040#13041#0" expanded="false" />
-                <element signature="e#13072#13073#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRealm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/realm/UserRealm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="52" column="34" lean-forward="false" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
-              <folding>
-                <element signature="e#686#687#0" expanded="false" />
-                <element signature="e#711#712#0" expanded="false" />
-                <element signature="e#745#746#0" expanded="false" />
-                <element signature="e#773#774#0" expanded="false" />
-                <element signature="e#805#806#0" expanded="false" />
-                <element signature="e#833#834#0" expanded="false" />
-                <element signature="e#875#876#0" expanded="false" />
-                <element signature="e#909#910#0" expanded="false" />
-                <element signature="e#940#941#0" expanded="false" />
-                <element signature="e#967#968#0" expanded="false" />
-                <element signature="e#1007#1008#0" expanded="false" />
-                <element signature="e#1039#1040#0" expanded="false" />
-                <element signature="e#1085#1086#0" expanded="false" />
-                <element signature="e#1113#1114#0" expanded="false" />
-                <element signature="e#1238#1239#0" expanded="false" />
-                <element signature="e#1269#1270#0" expanded="false" />
-                <element signature="e#1317#1318#0" expanded="false" />
-                <element signature="e#1357#1358#0" expanded="false" />
-                <element signature="e#1392#1393#0" expanded="false" />
-                <element signature="e#1423#1424#0" expanded="false" />
-                <element signature="e#1471#1472#0" expanded="false" />
-                <element signature="e#1511#1512#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrefUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/utils/PrefUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskDetailFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="131" column="42" lean-forward="true" selection-start-line="131" selection-start-column="42" selection-end-line="131" selection-end-column="42" />
-              <folding>
-                <element signature="e#3192#3456#0" expanded="true" />
-                <element signature="e#3455#3456#0" expanded="true" />
-                <element signature="e#3577#3839#0" expanded="true" />
-                <element signature="e#3838#3839#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskStatus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskStatus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DealListFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../dealmedan-android/app/src/main/java/com/dealmedan/android/ui/DealListFragment.java">
+      <file leaf-file-name="fragment_add_user.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_add_user.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="546" column="3" lean-forward="false" selection-start-line="542" selection-start-column="2" selection-end-line="546" selection-end-column="3" />
+            <state relative-caret-position="1638">
+              <caret line="78" column="29" lean-forward="false" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskListActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddUserActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/AddUserActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="147" column="20" lean-forward="false" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#7869#7870#0" expanded="false" />
-                <element signature="e#7902#7903#0" expanded="false" />
-                <element signature="e#9284#9748#0" expanded="false" />
-                <element signature="e#9747#9748#0" expanded="false" />
-                <element signature="e#9781#10231#0" expanded="false" />
-                <element signature="e#10230#10231#0" expanded="false" />
-                <element signature="e#10264#10378#0" expanded="false" />
-                <element signature="e#10377#10378#0" expanded="false" />
-                <element signature="e#12012#13824#0" expanded="false" />
-                <element signature="e#13823#13824#0" expanded="false" />
-                <element signature="e#13944#14110#0" expanded="false" />
-                <element signature="e#14109#14110#0" expanded="false" />
-                <element signature="e#32229#32452#0" expanded="false" />
-                <element signature="e#32451#32452#0" expanded="false" />
+                <element signature="e#1453#1600#0" expanded="true" />
+                <element signature="e#1599#1600#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu_action.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/menu/menu_action.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="e#318#335#0" expanded="true" />
-                <element signature="e#440#467#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="966">
+              <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_task_detail.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_task_detail.xml">
           <provider editor-type-id="android-designer2">
             <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
-              <folding>
-                <element signature="e#2337#2353#0" expanded="true" />
-              </folding>
-            </state>
           </provider>
         </entry>
       </file>
@@ -2076,7 +2018,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/GlideAppModule.java" />
         <option value="$PROJECT_DIR$/../build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MyApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TextAccent.java" />
         <option value="$PROJECT_DIR$/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskStatus.java" />
@@ -2098,15 +2039,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/migration/TaskMigration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskManagerApp.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/realm/TaskRealm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/realm/UserRealm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/utils/PrefUtils.java" />
         <option value="$PROJECT_DIR$/src/main/res/menu/menu_action.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_task_detail.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/AddUserActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_add_user.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/AddUserFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -2131,21 +2076,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2166,10 +2097,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2204,25 +2131,29 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="TaskManager" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+              <option name="myItemId" value="TaskManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../dealjava-android" />
-    <property name="SearchEverywhereHistoryKey" value="Ma&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/MainActivity.java&#10;TaskDeta&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java&#10;TaskDe&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/TaskDetailActivity.java&#10;Main&#9;PSI&#9;JAVA://com.professional.andri.taskmanager.MainActivity&#10;.giti&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/.gitignore&#10;.gi&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/.gitignore&#10;MainA&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/MainActivity.java&#10;Task&#9;PSI&#9;JAVA://com.professional.andri.taskmanager.Task&#10;android device mon&#9;ACTION&#9;Android.RunDdms&#10;Android&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/AndroidManifest.xml&#10;item_&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/res/layout/item_task.xml&#10;item_task&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/res/layout/item_task.xml&#10;bui&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/build.gradle&#10;build.g&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/build.gradle&#10;.git&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/.gitignore&#10;.g&#9;FILE&#9;file://D:/ANDRI/ANDROID/dealmedan-android/.gitignore&#10;AndroidMan&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/AndroidManifest.xml" />
+    <property name="SearchEverywhereHistoryKey" value="activity_ma&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/res/layout/activity_main.xml&#10;ANdroidM&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/AndroidManifest.xml&#10;Ma&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/MainActivity.java&#10;TaskDeta&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java&#10;TaskDe&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/TaskDetailActivity.java&#10;Main&#9;PSI&#9;JAVA://com.professional.andri.taskmanager.MainActivity&#10;.giti&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/.gitignore&#10;.gi&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/.gitignore&#10;MainA&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/java/com/professional/andri/taskmanager/MainActivity.java&#10;Task&#9;PSI&#9;JAVA://com.professional.andri.taskmanager.Task&#10;android device mon&#9;ACTION&#9;Android.RunDdms&#10;Android&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/AndroidManifest.xml&#10;item_&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/res/layout/item_task.xml&#10;item_task&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/res/layout/item_task.xml&#10;bui&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/build.gradle&#10;build.g&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/build.gradle&#10;.git&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/.gitignore&#10;.g&#9;FILE&#9;file://D:/ANDRI/ANDROID/dealmedan-android/.gitignore&#10;AndroidMan&#9;FILE&#9;file://D:/ANDRI/ANDROID/TaskManager/app/src/main/AndroidManifest.xml" />
     <property name="device.picker.selection" value="192.168.252.101:5555" />
     <property name="android.profiler.active" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -2235,10 +2166,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.professional.andri.taskmanager.adapter" />
       <recent name="com.professional.andri.taskmanager" />
+      <recent name="com.professional.andri.taskmanager.adapter" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ANDRI\ANDROID\TaskManager\app\src\main\res\layout" />
       <recent name="D:\ANDRI\ANDROID\TaskManager\app\src\main\java\com\professional\andri\taskmanager\utils" />
       <recent name="D:\ANDRI\ANDROID\TaskManager\app\src\main\java\com\professional\andri\taskmanager" />
       <recent name="D:\ANDRI\ANDROID\TaskManager\app\src\main\res\drawable" />
@@ -2327,7 +2259,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519637586574" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519659906251" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2375,7 +2307,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519637586575" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519659906252" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2558,7 +2490,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519637586576" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519659906254" />
       </method>
     </configuration>
     <list size="1">
@@ -2601,8 +2533,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4282353" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -2610,11 +2543,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27561837" sideWeight="0.5021482" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921588" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286219" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35924616" sideWeight="0.49785176" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282353" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35882354" sideWeight="0.49785176" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -2622,9 +2554,9 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29914072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39882353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39882353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2632,6 +2564,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921588" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282353" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -2681,43 +2614,11 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../dealmedan-android/app/src/main/java/com/dealmedan/android/TextAccent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generated/source/r/debug/com/professional/andri/taskmanager/R.java" />
-    <entry file="file://$PROJECT_DIR$/../../dealmedan-android/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../dealmedan-android/app/src/main/java/com/dealmedan/android/ui/InvoiceFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6657">
-          <caret line="371" column="61" lean-forward="false" selection-start-line="369" selection-start-column="5" selection-end-line="371" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_progress.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TextAccent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2775,13 +2676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../merchant-center/app/src/main/java/com/dealmedan/merchantcenter/model/Merchant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../merchant-center/app/src/main/java/com/dealmedan/merchantcenter/ui/fragment/VoucherFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -2793,13 +2687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#424#425#0" expanded="false" />
-            <element signature="e#459#460#0" expanded="false" />
-            <element signature="e#550#551#0" expanded="false" />
-            <element signature="e#577#578#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2814,19 +2701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#321#322#0" expanded="false" />
-            <element signature="e#356#357#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2853,13 +2727,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_task.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../merchant-center/app/src/main/java/com/dealmedan/merchantcenter/model/Log.java">
@@ -2926,26 +2800,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="55" column="43" lean-forward="false" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../merchant-center/app/src/main/java/com/dealmedan/merchantcenter/ui/adapter/LogAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1778#1779#0" expanded="false" />
-            <element signature="e#1829#1830#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2953,15 +2811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3423">
           <caret line="206" column="24" lean-forward="false" selection-start-line="206" selection-start-column="16" selection-end-line="206" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2293#2294#0" expanded="false" />
-            <element signature="e#2327#2328#0" expanded="false" />
-            <element signature="e#7608#7609#0" expanded="false" />
-            <element signature="e#7630#7631#0" expanded="false" />
-            <element signature="e#7812#7813#0" expanded="false" />
-            <element signature="e#7862#7863#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2969,32 +2818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding>
-            <element signature="e#552#553#0" expanded="false" />
-            <element signature="e#577#578#0" expanded="false" />
-            <element signature="e#613#614#0" expanded="false" />
-            <element signature="e#641#642#0" expanded="false" />
-            <element signature="e#673#674#0" expanded="false" />
-            <element signature="e#701#702#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#777#778#0" expanded="false" />
-            <element signature="e#810#811#0" expanded="false" />
-            <element signature="e#839#840#0" expanded="false" />
-            <element signature="e#883#884#0" expanded="false" />
-            <element signature="e#919#920#0" expanded="false" />
-            <element signature="e#951#952#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1021#1022#0" expanded="false" />
-            <element signature="e#1055#1056#0" expanded="false" />
-            <element signature="e#1085#1086#0" expanded="false" />
-            <element signature="e#1114#1115#0" expanded="false" />
-            <element signature="e#1155#1156#0" expanded="false" />
-            <element signature="e#1191#1192#0" expanded="false" />
-            <element signature="e#1225#1226#0" expanded="false" />
-            <element signature="e#1252#1253#0" expanded="false" />
-            <element signature="e#1295#1296#0" expanded="false" />
-            <element signature="e#1327#1328#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3005,31 +2828,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../merchant-center/app/src/main/java/com/dealmedan/merchantcenter/realm/MerchantRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2562">
-          <caret line="145" column="36" lean-forward="false" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
-          <folding>
-            <element signature="e#1547#1548#0" expanded="false" />
-            <element signature="e#1589#1590#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/utils/PrefUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3068,85 +2870,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2499">
           <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#7018#7019#0" expanded="false" />
-            <element signature="e#7085#7086#0" expanded="false" />
-            <element signature="e#7475#7476#0" expanded="false" />
-            <element signature="e#7552#7553#0" expanded="false" />
-            <element signature="e#8099#8100#0" expanded="false" />
-            <element signature="e#8167#8168#0" expanded="false" />
-            <element signature="e#9963#9964#0" expanded="false" />
-            <element signature="e#9992#9993#0" expanded="false" />
-            <element signature="e#10622#10623#0" expanded="false" />
-            <element signature="e#10666#10667#0" expanded="false" />
-            <element signature="e#12126#12127#0" expanded="false" />
-            <element signature="e#12149#12150#0" expanded="false" />
-            <element signature="e#13040#13041#0" expanded="false" />
-            <element signature="e#13072#13073#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../dealmedan-android/app/src/main/res/menu/menu_deal_list.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_task_detail.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
-          <folding>
-            <element signature="e#2337#2353#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/menu/menu_action.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/menu/menu_action.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#318#335#0" expanded="true" />
-            <element signature="e#440#467#0" expanded="true" />
-          </folding>
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../dealmedan-android/app/src/main/java/com/dealmedan/android/ui/DealListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="546" column="3" lean-forward="false" selection-start-line="542" selection-start-column="2" selection-end-line="546" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#7869#7870#0" expanded="false" />
-            <element signature="e#7902#7903#0" expanded="false" />
-            <element signature="e#9284#9748#0" expanded="false" />
-            <element signature="e#9747#9748#0" expanded="false" />
-            <element signature="e#9781#10231#0" expanded="false" />
-            <element signature="e#10230#10231#0" expanded="false" />
-            <element signature="e#10264#10378#0" expanded="false" />
-            <element signature="e#10377#10378#0" expanded="false" />
-            <element signature="e#12012#13824#0" expanded="false" />
-            <element signature="e#13823#13824#0" expanded="false" />
-            <element signature="e#13944#14110#0" expanded="false" />
-            <element signature="e#14109#14110#0" expanded="false" />
-            <element signature="e#32229#32452#0" expanded="false" />
-            <element signature="e#32451#32452#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3154,7 +2914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3162,32 +2921,124 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="74" column="16" lean-forward="false" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="139" column="23" lean-forward="false" selection-start-line="139" selection-start-column="23" selection-end-line="139" selection-end-column="23" />
+          <folding>
+            <element signature="e#3192#3456#0" expanded="true" />
+            <element signature="e#3455#3456#0" expanded="true" />
+            <element signature="e#3577#3839#0" expanded="true" />
+            <element signature="e#3838#3839#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="100" column="39" lean-forward="false" selection-start-line="100" selection-start-column="39" selection-end-line="100" selection-end-column="39" />
+        <state relative-caret-position="567">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
-            <element signature="e#2880#3081#0" expanded="true" />
-            <element signature="e#3080#3081#0" expanded="true" />
             <element signature="e#3269#3270#0" expanded="true" />
             <element signature="e#3343#3344#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java">
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_add_user.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="131" column="42" lean-forward="true" selection-start-line="131" selection-start-column="42" selection-end-line="131" selection-end-column="42" />
+        <state relative-caret-position="1638">
+          <caret line="78" column="29" lean-forward="false" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/AddUserActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../merchant-center/app/src/main/java/com/dealmedan/merchantcenter/realm/MerchantRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../merchant-center/app/src/main/java/com/dealmedan/merchantcenter/model/Merchant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm/realm-android-library/4.3.3/2cf324f3191d8d3b7afacc6967aa7f40ea5409e3/realm-android-library-4.3.3-sources.jar!/io/realm/RealmQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41769">
+          <caret line="2020" column="27" lean-forward="false" selection-start-line="2020" selection-start-column="27" selection-end-line="2020" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/AddUserFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1443">
+          <caret line="115" column="13" lean-forward="true" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
           <folding>
-            <element signature="e#3192#3456#0" expanded="true" />
-            <element signature="e#3455#3456#0" expanded="true" />
-            <element signature="e#3577#3839#0" expanded="true" />
-            <element signature="e#3838#3839#0" expanded="true" />
+            <element signature="e#2555#2707#0" expanded="true" />
+            <element signature="e#2706#2707#0" expanded="true" />
+            <element signature="e#3654#4423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="147" column="20" lean-forward="false" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
+          <folding>
+            <element signature="e#1453#1600#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
           </folding>
         </state>
       </provider>

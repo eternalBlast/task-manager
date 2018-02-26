@@ -20,6 +20,7 @@
         <activity android:name=".TaskListActivity">
         </activity>
         <activity android:name=".TaskDetailActivity"/>
+        <activity android:name=".AddUserActivity"/>
 
     </application>
 

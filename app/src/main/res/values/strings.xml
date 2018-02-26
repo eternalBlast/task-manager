@@ -11,4 +11,7 @@
     <string name="approve">Approve</string>
     <string name="mark_as_completed">Mark as completed</string>
     <string name="status">Status:</string>
+    <string name="level">Level</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
 </resources>

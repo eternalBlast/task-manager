@@ -137,14 +137,15 @@ public class MainActivity extends BaseActivity {
                 .equalTo("username", mUsername.getText().toString())
                 .findFirst();
 
-        Log.d("TAG", "SINIIII" + userRealm.getTasks().size());
-
         if (userRealm == null) {
             Toast.makeText(this, "Username doesn't exist", Toast.LENGTH_SHORT).show();
         } else {
             if (mPassword.getText().toString().equals(userRealm.getPassword())) {
                 PrefUtils.setPrefUserId(this, userRealm.getId());
-                startActivity(new Intent(MainActivity.this, TaskListActivity.class));
+                if(userRealm.getLevel().equals("Administrator"))
+                    startActivity(new Intent(MainActivity.this, AddUserActivity.class));
+                else
+                    startActivity(new Intent(MainActivity.this, TaskListActivity.class));
             }
             else
                 Toast.makeText(this, "Password doesn't matched", Toast.LENGTH_SHORT).show();
