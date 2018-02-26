@@ -17,6 +17,8 @@ import com.professional.andri.taskmanager.adapter.RealmTaskAdapter;
 import com.professional.andri.taskmanager.adapter.TaskAdapter;
 import com.professional.andri.taskmanager.model.Task;
 import com.professional.andri.taskmanager.realm.TaskRealm;
+import com.professional.andri.taskmanager.realm.UserRealm;
+import com.professional.andri.taskmanager.utils.PrefUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +31,7 @@ import io.realm.RealmResults;
  * Created by Andri on 19/11/2017.
  */
 
-public class TaskListFragment extends Fragment implements EndlessRecyclerView.Pager{
+public class TaskListFragment extends Fragment implements EndlessRecyclerView.Pager {
     @BindView(R.id.task_rv)
     protected EndlessRecyclerView mTaskRV;
     private TaskAdapter mAdapter;
@@ -50,7 +52,7 @@ public class TaskListFragment extends Fragment implements EndlessRecyclerView.Pa
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        mActivity = (TaskListActivity)context;
+        mActivity = (TaskListActivity) context;
     }
 
     @Nullable
@@ -63,7 +65,13 @@ public class TaskListFragment extends Fragment implements EndlessRecyclerView.Pa
 //            mTasks.add(new Task());
 //        }
 
-        taskRealms = mActivity.getRealm().where(TaskRealm.class).findAll();
+        UserRealm userRealm = mActivity.getRealm().where(UserRealm.class)
+                .equalTo("id", PrefUtils.getPrefUserId(mActivity))
+                .findFirst();
+        if (userRealm.getLevel().equals("Manager") || userRealm.getLevel().equals("Administrator"))
+            taskRealms = mActivity.getRealm().where(TaskRealm.class).findAll();
+        else
+            taskRealms = mActivity.getRealm().where(TaskRealm.class).equalTo("user.id", userRealm.getId()).findAll();
         RealmTaskAdapter realmTaskAdapter = new RealmTaskAdapter(taskRealms);
 //        ArrayList<Task> mTasks = Task.feedTask(20);
         mAdapter = new TaskAdapter(getContext());

@@ -1,15 +1,8 @@
 package com.professional.andri.taskmanager.realm;
 
-import com.professional.andri.taskmanager.converter.RealmListParcelConverter;
-import com.professional.andri.taskmanager.model.User;
-
-import org.parceler.Parcel;
-import org.parceler.ParcelPropertyConverter;
-
 import io.realm.RealmList;
 import io.realm.RealmObject;
-import io.realm.TaskRealmRealmProxy;
-import io.realm.UserRealmRealmProxy;
+import io.realm.RealmResults;
 import io.realm.annotations.PrimaryKey;
 
 /**

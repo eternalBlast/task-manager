@@ -11,13 +11,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.professional.andri.taskmanager.model.Task;
 import com.professional.andri.taskmanager.realm.TaskRealm;
 import com.professional.andri.taskmanager.realm.UserRealm;
+import com.professional.andri.taskmanager.utils.PrefUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import io.realm.Realm;
+import io.realm.RealmList;
 import io.realm.RealmResults;
 
 public class MainActivity extends BaseActivity {
@@ -42,6 +45,20 @@ public class MainActivity extends BaseActivity {
                 validate();
             }
         });
+
+//        Realm realm = Realm.getDefaultInstance();
+//        realm.beginTransaction();
+//        RealmResults<TaskRealm> taskRealm = getRealm().where(TaskRealm.class).findAll();
+//        UserRealm userRealm = getRealm().where(UserRealm.class).equalTo("id", 5).findFirst();
+//        RealmList<TaskRealm> taskRealms = new RealmList<>();
+//        for(int i=0;i<taskRealm.size();i++){
+//            if(i%5==0) {
+//                taskRealms.add(taskRealm.get(i));
+//            }
+//        }
+//        Log.d("TAGGG", userRealm.getTasks().get(0).getId() + "SOMOO")/*userRealm.setTasks(taskRealms)*/;
+//        realm.commitTransaction();
+
 
         sendNotification();
 
@@ -120,11 +137,15 @@ public class MainActivity extends BaseActivity {
                 .equalTo("username", mUsername.getText().toString())
                 .findFirst();
 
+        Log.d("TAG", "SINIIII" + userRealm.getTasks().size());
+
         if (userRealm == null) {
             Toast.makeText(this, "Username doesn't exist", Toast.LENGTH_SHORT).show();
         } else {
-            if (mPassword.getText().toString().equals(userRealm.getPassword()))
+            if (mPassword.getText().toString().equals(userRealm.getPassword())) {
+                PrefUtils.setPrefUserId(this, userRealm.getId());
                 startActivity(new Intent(MainActivity.this, TaskListActivity.class));
+            }
             else
                 Toast.makeText(this, "Password doesn't matched", Toast.LENGTH_SHORT).show();
         }
