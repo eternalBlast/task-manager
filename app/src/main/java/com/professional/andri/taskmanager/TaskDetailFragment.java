@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -24,6 +25,7 @@ import org.parceler.Parcels;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import io.realm.Realm;
 
 /**
  * Created by Andri on 19/11/2017.
@@ -93,6 +95,33 @@ public class TaskDetailFragment extends Fragment {
     }
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.menu_approve:
+                mActivity.getRealm().executeTransaction(new Realm.Transaction() {
+                    @Override
+                    public void execute(@NonNull Realm realm) {
+                        task.setStatus(TaskStatus.ON_PROGRESS);
+                        setTaskStatus();
+                    }
+                });
+                return true;
+            case R.id.menu_mark:
+                mActivity.getRealm().executeTransaction(new Realm.Transaction() {
+                    @Override
+                    public void execute(@NonNull Realm realm) {
+                        task.setStatus(TaskStatus.COMPLETED);
+                        setTaskStatus();
+                    }
+                });
+                return true;
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
     public void onDestroyView() {
         unbinder.unbind();
         super.onDestroyView();
@@ -101,10 +130,7 @@ public class TaskDetailFragment extends Fragment {
     public void setTaskData() {
         mTitle.setText(task.getTitle());
         mDetail.setText(task.getDetail());
-        final TextAccent taskAccent = TaskStatus.getTextAccent(mActivity, task.getStatus());
-        mStatus.setText(taskAccent.getText());
-        mStatus.setTextColor(taskAccent.getColor());
-
+        setTaskStatus();
         int id = mImage.getContext().getResources().getIdentifier(task.getImage(), "drawable", mImage.getContext().getPackageName());
 
         Glide.with(this)
@@ -115,5 +141,11 @@ public class TaskDetailFragment extends Fragment {
                         .dontTransform())
                 .into(mImage);
 
+    }
+
+    private void setTaskStatus(){
+        final TextAccent taskAccent = TaskStatus.getTextAccent(mActivity, task.getStatus());
+        mStatus.setText(taskAccent.getText());
+        mStatus.setTextColor(taskAccent.getColor());
     }
 }

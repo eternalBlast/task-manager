@@ -60,18 +60,8 @@ public class TaskListFragment extends Fragment implements EndlessRecyclerView.Pa
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_task_list, container, false);
         ButterKnife.bind(this, view);
-//        ArrayList<Task> mTasks = new ArrayList<>();
-//        for (int i = 0; i < 10; i++) {
-//            mTasks.add(new Task());
-//        }
 
-        UserRealm userRealm = mActivity.getRealm().where(UserRealm.class)
-                .equalTo("id", PrefUtils.getPrefUserId(mActivity))
-                .findFirst();
-        if (userRealm.getLevel().equals("Manager") || userRealm.getLevel().equals("Administrator"))
-            taskRealms = mActivity.getRealm().where(TaskRealm.class).findAll();
-        else
-            taskRealms = mActivity.getRealm().where(TaskRealm.class).equalTo("user.id", userRealm.getId()).findAll();
+        fetchTaskRealm();
         RealmTaskAdapter realmTaskAdapter = new RealmTaskAdapter(taskRealms);
 //        ArrayList<Task> mTasks = Task.feedTask(20);
         mAdapter = new TaskAdapter(getContext());
@@ -104,7 +94,26 @@ public class TaskListFragment extends Fragment implements EndlessRecyclerView.Pa
         }, DELAY);
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        fetchTaskRealm();
+        mAdapter.notifyDataSetChanged();
+    }
+
     private void addItems() {
         mAdapter.setCount(mAdapter.getItemCount() + ITEMS_ON_PAGE);
+    }
+
+    private void fetchTaskRealm() {
+        UserRealm userRealm = mActivity.getRealm().where(UserRealm.class)
+                .equalTo("id", PrefUtils.getPrefUserId(mActivity))
+                .findFirst();
+        if (userRealm != null) {
+            if (userRealm.getLevel().equals("Manager") || userRealm.getLevel().equals("Administrator"))
+                taskRealms = mActivity.getRealm().where(TaskRealm.class).findAll();
+            else
+                taskRealms = mActivity.getRealm().where(TaskRealm.class).equalTo("user.id", userRealm.getId()).findAll();
+        }
     }
 }
