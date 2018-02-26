@@ -67,7 +67,7 @@ public class TaskDetailFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        mActivity = (TaskDetailActivity)context;
+        mActivity = (TaskDetailActivity) context;
     }
 
     @Nullable
@@ -91,12 +91,20 @@ public class TaskDetailFragment extends Fragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        if (task.getStatus() == TaskStatus.COMPLETED && task.getStatus() != TaskStatus.NOT_COMPLETED)
+            return;
         inflater.inflate(R.menu.menu_action, menu);
+        MenuItem approveMenu = menu.findItem(R.id.menu_approve);
+        MenuItem markMenu = menu.findItem(R.id.menu_mark);
+        if (task.getStatus() != TaskStatus.WAITING_APPROVAL)
+            approveMenu.setVisible(false);
+        if (task.getStatus() != TaskStatus.ON_PROGRESS)
+            markMenu.setVisible(false);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.menu_approve:
                 mActivity.getRealm().executeTransaction(new Realm.Transaction() {
                     @Override
@@ -143,7 +151,7 @@ public class TaskDetailFragment extends Fragment {
 
     }
 
-    private void setTaskStatus(){
+    private void setTaskStatus() {
         final TextAccent taskAccent = TaskStatus.getTextAccent(mActivity, task.getStatus());
         mStatus.setText(taskAccent.getText());
         mStatus.setTextColor(taskAccent.getColor());
