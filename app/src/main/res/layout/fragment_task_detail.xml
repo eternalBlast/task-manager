@@ -19,24 +19,40 @@
         android:id="@+id/task_title_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:textStyle="bold"
-        tools:text="Task title"
         app:layout_constraintStart_toStartOf="@id/task_iv"
         app:layout_constraintTop_toBottomOf="@+id/task_iv"
-        android:layout_marginLeft="8dp" />
+        tools:text="Task title" />
 
     <TextView
         android:id="@+id/task_detail_tv"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="180dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        tools:text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis et ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/task_title_tv"
-        app:layout_constraintTop_toBottomOf="@+id/task_title_tv"/>
+        app:layout_constraintTop_toBottomOf="@+id/task_title_tv"
+        tools:text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est." />
+
+    <TextView
+        android:id="@+id/status_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        app:layout_constraintLeft_toLeftOf="@id/task_detail_tv"
+        app:layout_constraintTop_toBottomOf="@id/task_detail_tv" />
+
+    <TextView
+        android:id="@+id/task_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@id/task_detail_tv"
+        app:layout_constraintTop_toTopOf="@id/status_label_tv"
+        tools:text="Waiting for approval" />
 </android.support.constraint.ConstraintLayout>

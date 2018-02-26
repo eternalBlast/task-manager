@@ -10,4 +10,5 @@
     <string name="need_discuss">Need discuss</string>
     <string name="approve">Approve</string>
     <string name="mark_as_completed">Mark as completed</string>
+    <string name="status">Status:</string>
 </resources>

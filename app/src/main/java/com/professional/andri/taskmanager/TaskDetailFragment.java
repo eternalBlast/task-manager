@@ -37,6 +37,8 @@ public class TaskDetailFragment extends Fragment {
     protected TextView mDetail;
     @BindView(R.id.task_iv)
     protected ImageView mImage;
+    @BindView(R.id.task_status_tv)
+    protected TextView mStatus;
     private Unbinder unbinder;
 
     public static final String ARG_TASK = "ARG_TASK";
@@ -99,6 +101,9 @@ public class TaskDetailFragment extends Fragment {
     public void setTaskData() {
         mTitle.setText(task.getTitle());
         mDetail.setText(task.getDetail());
+        final TextAccent taskAccent = TaskStatus.getTextAccent(mActivity, task.getStatus());
+        mStatus.setText(taskAccent.getText());
+        mStatus.setTextColor(taskAccent.getColor());
 
         int id = mImage.getContext().getResources().getIdentifier(task.getImage(), "drawable", mImage.getContext().getPackageName());
 
