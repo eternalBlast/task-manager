@@ -57,6 +57,7 @@ public class AddTaskFragment extends Fragment {
     private DatePickerDialog datePickerDialog;
     private AlertDialog mAlert;
     private RealmResults<UserRealm> userRealms;
+    private String deadlineDate;
 
     public static AddTaskFragment newInstance() {
         return new AddTaskFragment();
@@ -99,7 +100,7 @@ public class AddTaskFragment extends Fragment {
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                 final Calendar calendar = Calendar.getInstance();
                 calendar.set(year, monthOfYear, dayOfMonth);
-//                confirmPayment.transferDate = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss", locale).format(new Date(calendar.getTimeInMillis()));
+                deadlineDate = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss", locale).format(new Date(calendar.getTimeInMillis()));
                 mDeadLine.setText(formatter.format(calendar.getTime()));
                 Log.d("TAGG", new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss", locale).format(new Date(calendar.getTimeInMillis())) + " SINIII");
             }
@@ -149,9 +150,10 @@ public class AddTaskFragment extends Fragment {
             public void execute(@NonNull Realm realm) {
                 UserRealm userRealm;
                 RealmResults<TaskRealm> allTasks = mActivity.getRealm().where(TaskRealm.class).sort("id").findAll();
-                long lastId = Long.valueOf(allTasks.last().getId()+1);
+                String lastId = String.valueOf(allTasks.last().getId()+1);
                 TaskRealm taskRealm = realm.createObject(TaskRealm.class, lastId + 1);
                 taskRealm.setTitle(mTitle.getText().toString());
+                taskRealm.setDeadline(deadlineDate);
                 taskRealm.setDetail(mDetail.getText().toString());
                 if (PrefUtils.getPrefUserLevel(mActivity).equals("Manager")) {
                     userRealm = mActivity.getRealm().where(UserRealm.class)

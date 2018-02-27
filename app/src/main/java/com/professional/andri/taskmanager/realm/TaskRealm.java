@@ -18,6 +18,7 @@ public class TaskRealm extends RealmObject {
     private String image;
     private int status;
     private UserRealm user;
+    private String deadline;
 
     public String getId() {
         return id;
@@ -65,5 +66,13 @@ public class TaskRealm extends RealmObject {
 
     public void setUser(UserRealm user) {
         this.user = user;
+    }
+
+    public String getDeadline() {
+        return deadline;
+    }
+
+    public void setDeadline(String deadline) {
+        this.deadline = deadline;
     }
 }

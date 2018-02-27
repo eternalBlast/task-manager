@@ -15,7 +15,7 @@ public class TaskManagerApp extends Application {
     Realm.init(this);
       RealmConfiguration myConfig = new RealmConfiguration.Builder()
               .name("task_db.realm")
-              .schemaVersion(3)
+              .schemaVersion(4)
               .migration(new TaskMigration())
               .build();
       Realm.setDefaultConfiguration(myConfig);

@@ -45,5 +45,12 @@ public class TaskMigration implements RealmMigration {
                     .addField("password", String.class);
             oldVersion++;
         }
+
+        if(oldVersion == 3){
+            schema.get("TaskRealm")
+                    .addField("deadline", String.class);
+            oldVersion++;
+        }
+
     }
 }
