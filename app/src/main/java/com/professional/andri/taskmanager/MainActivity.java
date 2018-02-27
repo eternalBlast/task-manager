@@ -89,8 +89,8 @@ public class MainActivity extends BaseActivity {
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this, "1")
                         .setSmallIcon(R.drawable.ic_launcher_background)
-                        .setContentTitle("My notification")
-                        .setContentText("Hello World!");
+                        .setContentTitle("Not completed")
+                        .setContentText("The Task \"Implement payment gateway is not completed\"");
 
 
         // Gets an instance of the NotificationManager service//
@@ -137,11 +137,11 @@ public class MainActivity extends BaseActivity {
     }
 
     private void validate() {
-        if(mUsername.getText().toString().equals("")) {
+        if (mUsername.getText().toString().equals("")) {
             Toast.makeText(this, "Username is required", Toast.LENGTH_SHORT).show();
             return;
         }
-        if(mPassword.getText().toString().equals("")) {
+        if (mPassword.getText().toString().equals("")) {
             Toast.makeText(this, "Password is required", Toast.LENGTH_SHORT).show();
             return;
         }
@@ -156,12 +156,11 @@ public class MainActivity extends BaseActivity {
             if (mPassword.getText().toString().equals(userRealm.getPassword())) {
                 PrefUtils.setPrefUserId(this, userRealm.getId());
                 PrefUtils.setPrefUserLevel(this, userRealm.getLevel());
-                if(userRealm.getLevel().equals("Administrator"))
+                if (userRealm.getLevel().equals("Administrator"))
                     startActivity(new Intent(MainActivity.this, AddUserActivity.class));
                 else
                     startActivity(new Intent(MainActivity.this, TaskListActivity.class));
-            }
-            else
+            } else
                 Toast.makeText(this, "Password doesn't matched", Toast.LENGTH_SHORT).show();
         }
     }
