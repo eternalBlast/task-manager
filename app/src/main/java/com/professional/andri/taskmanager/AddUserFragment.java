@@ -69,6 +69,7 @@ public class AddUserFragment extends Fragment {
         String[] arraySpinner = new String[] {
                 "Employee", "Manager", "Administrator"
         };
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(mActivity,
                 android.R.layout.simple_spinner_item, arraySpinner);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

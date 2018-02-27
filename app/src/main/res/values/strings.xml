@@ -22,4 +22,5 @@
     <string name="assign_to">Assign to</string>
     <string name="create_task">Create Task</string>
     <string name="add_task">Add Task</string>
+    <string name="logout">Logout</string>
 </resources>

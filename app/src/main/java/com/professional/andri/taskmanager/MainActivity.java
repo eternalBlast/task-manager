@@ -39,7 +39,6 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         unbinder = ButterKnife.bind(this);
-        RealmResults<UserRealm> userRealms = getRealm().where(UserRealm.class).findAll();
 
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
