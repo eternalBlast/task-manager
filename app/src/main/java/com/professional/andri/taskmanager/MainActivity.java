@@ -156,6 +156,7 @@ public class MainActivity extends BaseActivity {
             if (mPassword.getText().toString().equals(userRealm.getPassword())) {
                 PrefUtils.setPrefUserId(this, userRealm.getId());
                 PrefUtils.setPrefUserLevel(this, userRealm.getLevel());
+                PrefUtils.setPrefUserName(this, userRealm.getName());
                 if (userRealm.getLevel().equals("Administrator"))
                     startActivity(new Intent(MainActivity.this, AddUserActivity.class)
                             .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));

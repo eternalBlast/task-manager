@@ -11,9 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="633e838d-2059-4053-b4b7-636473b65e9b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MainActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/utils/PrefUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/utils/PrefUtils.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,7 +83,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1113">
               <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,8 +113,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="140" column="80" lean-forward="false" selection-start-line="140" selection-start-column="80" selection-end-line="140" selection-end-column="80" />
+            <state relative-caret-position="2175">
+              <caret line="158" column="67" lean-forward="false" selection-start-line="158" selection-start-column="67" selection-end-line="158" selection-end-column="67" />
               <folding>
                 <element signature="e#1479#1626#0" expanded="true" />
                 <element signature="e#1625#1626#0" expanded="true" />
@@ -121,43 +123,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskListActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListActivity.java">
+      <file leaf-file-name="TaskListFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="369">
+              <caret line="76" column="77" lean-forward="true" selection-start-line="76" selection-start-column="77" selection-end-line="76" selection-end-column="77" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRealm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/realm/UserRealm.java">
+      <file leaf-file-name="TaskListActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-              <folding>
-                <element signature="e#1169#1170#0" expanded="true" />
-                <element signature="e#1203#1204#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="273">
+              <caret line="16" column="89" lean-forward="false" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskRealm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/realm/TaskRealm.java">
+      <file leaf-file-name="PrefUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/utils/PrefUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
-                <element signature="e#606#607#0" expanded="true" />
-                <element signature="e#1391#1392#0" expanded="true" />
-                <element signature="e#1422#1423#0" expanded="true" />
-                <element signature="e#1470#1471#0" expanded="true" />
-                <element signature="e#1510#1511#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="600">
+              <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -2055,15 +2046,15 @@
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_task_list.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/AddUserActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/utils/PrefUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/realm/TaskRealm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/migration/TaskMigration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskManagerApp.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_task_detail.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskDetailFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/AddTaskFragment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/utils/PrefUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -2141,6 +2132,28 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="taskmanager" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TaskManager" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taskmanager" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2271,7 +2284,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519731372672" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519731717488" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2319,7 +2332,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519731372672" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519731717488" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2481,7 +2494,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519731372675" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519731717489" />
       </method>
     </configuration>
     <list size="1">
@@ -2748,6 +2761,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#321#322#0" expanded="false" />
+            <element signature="e#356#357#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2886,21 +2903,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="118" column="40" lean-forward="false" selection-start-line="118" selection-start-column="40" selection-end-line="118" selection-end-column="40" />
-          <folding>
-            <element signature="e#2256#2609#0" expanded="true" />
-            <element signature="e#2608#2609#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/UserListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="642">
           <caret line="80" column="11" lean-forward="false" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+          <folding>
+            <element signature="e#2988#2989#0" expanded="true" />
+            <element signature="e#3070#3071#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2908,13 +2918,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/utils/PrefUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2972,7 +2976,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1113">
           <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3016,10 +3022,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="16" column="89" lean-forward="false" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/utils/PrefUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="140" column="80" lean-forward="false" selection-start-line="140" selection-start-column="80" selection-end-line="140" selection-end-column="80" />
+        <state relative-caret-position="2175">
+          <caret line="158" column="67" lean-forward="false" selection-start-line="158" selection-start-column="67" selection-end-line="158" selection-end-column="67" />
           <folding>
             <element signature="e#1479#1626#0" expanded="true" />
             <element signature="e#1625#1626#0" expanded="true" />
@@ -3027,10 +3049,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/professional/andri/taskmanager/TaskListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="369">
+          <caret line="76" column="77" lean-forward="true" selection-start-line="76" selection-start-column="77" selection-end-line="76" selection-end-column="77" />
           <folding />
         </state>
       </provider>
