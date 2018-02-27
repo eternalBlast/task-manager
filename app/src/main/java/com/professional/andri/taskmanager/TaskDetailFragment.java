@@ -41,6 +41,8 @@ public class TaskDetailFragment extends Fragment {
     protected ImageView mImage;
     @BindView(R.id.task_status_tv)
     protected TextView mStatus;
+    @BindView(R.id.assign_tv)
+    protected TextView mAssign;
     private Unbinder unbinder;
 
     public static final String ARG_TASK = "ARG_TASK";
@@ -138,6 +140,7 @@ public class TaskDetailFragment extends Fragment {
     public void setTaskData() {
         mTitle.setText(task.getTitle());
         mDetail.setText(task.getDetail());
+        mAssign.setText(task.getUser().getName());
         setTaskStatus();
         int id = mImage.getContext().getResources().getIdentifier(task.getImage(), "drawable", mImage.getContext().getPackageName());
 

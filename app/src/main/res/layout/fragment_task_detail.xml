@@ -44,12 +44,12 @@
         android:id="@+id/status_label_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
         android:text="@string/status"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/task_status_tv"
@@ -58,4 +58,24 @@
         app:layout_constraintRight_toRightOf="@id/task_detail_tv"
         app:layout_constraintTop_toTopOf="@id/status_label_tv"
         tools:text="Waiting for approval" />
+
+    <TextView
+        android:id="@+id/assign_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/assign_to"
+        app:layout_constraintBottom_toTopOf="@id/task_status_tv"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/assign_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/status_label_tv"
+        app:layout_constraintRight_toRightOf="@id/task_detail_tv"
+        tools:text="bill" />
 </android.support.constraint.ConstraintLayout>
