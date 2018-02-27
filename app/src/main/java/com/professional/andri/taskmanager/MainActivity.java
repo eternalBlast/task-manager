@@ -142,6 +142,7 @@ public class MainActivity extends BaseActivity {
         } else {
             if (mPassword.getText().toString().equals(userRealm.getPassword())) {
                 PrefUtils.setPrefUserId(this, userRealm.getId());
+                PrefUtils.setPrefUserLevel(this, userRealm.getLevel());
                 if(userRealm.getLevel().equals("Administrator"))
                     startActivity(new Intent(MainActivity.this, AddUserActivity.class));
                 else

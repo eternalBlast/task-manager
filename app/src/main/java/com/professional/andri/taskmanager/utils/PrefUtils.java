@@ -8,6 +8,7 @@ public class PrefUtils {
 
   private static final String PREF_USER_ID = "pref_user_id";
   private static final String PREF_ALLOW_NOTIF = "pref_allow_notif";
+  private static final String PREF_USER_LEVEL = "pref_allow_level";
 
   public static boolean getPrefAllowNotif(final Context context) {
     SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
@@ -27,5 +28,15 @@ public class PrefUtils {
   public static long getPrefUserId(final Context context) {
     SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
     return sp.getLong(PREF_USER_ID, 1);
+  }
+
+  public static void setPrefUserLevel(final Context context, final String level) {
+    SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+    sp.edit().putString(PREF_USER_LEVEL, level).apply();
+  }
+
+  public static String getPrefUserLevel(final Context context) {
+    SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+    return sp.getString(PREF_USER_LEVEL, "Employee");
   }
 }
