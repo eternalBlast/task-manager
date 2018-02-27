@@ -157,9 +157,11 @@ public class MainActivity extends BaseActivity {
                 PrefUtils.setPrefUserId(this, userRealm.getId());
                 PrefUtils.setPrefUserLevel(this, userRealm.getLevel());
                 if (userRealm.getLevel().equals("Administrator"))
-                    startActivity(new Intent(MainActivity.this, AddUserActivity.class));
+                    startActivity(new Intent(MainActivity.this, AddUserActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
                 else
-                    startActivity(new Intent(MainActivity.this, TaskListActivity.class));
+                    startActivity(new Intent(MainActivity.this, TaskListActivity.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
             } else
                 Toast.makeText(this, "Password doesn't matched", Toast.LENGTH_SHORT).show();
         }
