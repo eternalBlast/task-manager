@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -34,6 +35,8 @@ import io.realm.RealmResults;
 public class TaskListFragment extends Fragment implements EndlessRecyclerView.Pager {
     @BindView(R.id.task_rv)
     protected EndlessRecyclerView mTaskRV;
+    @BindView(R.id.add_task_button)
+    protected AppCompatButton mAddTask;
     private TaskAdapter mAdapter;
     private boolean loading = false;
     private static final int ITEMS_ON_PAGE = 30;
@@ -61,6 +64,15 @@ public class TaskListFragment extends Fragment implements EndlessRecyclerView.Pa
         final View view = inflater.inflate(R.layout.fragment_task_list, container, false);
         ButterKnife.bind(this, view);
 
+        mAddTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mActivity.getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, AddTaskFragment.newInstance())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
         fetchTaskRealm();
         RealmTaskAdapter realmTaskAdapter = new RealmTaskAdapter(taskRealms);
 //        ArrayList<Task> mTasks = Task.feedTask(20);
@@ -99,6 +111,13 @@ public class TaskListFragment extends Fragment implements EndlessRecyclerView.Pa
         super.onResume();
         fetchTaskRealm();
         mAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onDestroyView() {
+        fetchTaskRealm();
+        mAdapter.notifyDataSetChanged();
+        super.onDestroyView();
     }
 
     private void addItems() {
