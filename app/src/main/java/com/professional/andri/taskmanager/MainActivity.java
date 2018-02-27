@@ -16,6 +16,8 @@ import com.professional.andri.taskmanager.realm.TaskRealm;
 import com.professional.andri.taskmanager.realm.UserRealm;
 import com.professional.andri.taskmanager.utils.PrefUtils;
 
+import java.util.Random;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -60,6 +62,17 @@ public class MainActivity extends BaseActivity {
 //        realm.commitTransaction();
 
 
+//        getRealm().executeTransaction(new Realm.Transaction() {
+//            @Override
+//            public void execute(Realm realm) {
+//                RealmResults<TaskRealm> taskRealms = getRealm().where(TaskRealm.class).findAll();
+//                String[] dates = new String[]{"2018-04-15", "2018-03-12", "2018-03-27", "2018-03-19", "2018-05-01"};
+//                for(TaskRealm taskRealm:taskRealms) {
+//                    Random random = new Random();
+//                    taskRealm.setDeadline(dates[random.nextInt(dates.length)]);
+//                }
+//            }
+//        });
         sendNotification();
 
 //        Realm realm = Realm.getDefaultInstance();

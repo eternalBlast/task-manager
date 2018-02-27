@@ -78,4 +78,24 @@
         app:layout_constraintBottom_toTopOf="@id/status_label_tv"
         app:layout_constraintRight_toRightOf="@id/task_detail_tv"
         tools:text="bill" />
+
+    <TextView
+        android:id="@+id/deadline_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/task_deadline"
+        app:layout_constraintBottom_toTopOf="@id/assign_label_tv"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/deadline_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/assign_label_tv"
+        app:layout_constraintRight_toRightOf="@id/task_detail_tv"
+        tools:text="23 February 2018 23" />
 </android.support.constraint.ConstraintLayout>

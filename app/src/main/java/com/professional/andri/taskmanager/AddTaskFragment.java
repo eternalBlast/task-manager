@@ -100,7 +100,7 @@ public class AddTaskFragment extends Fragment {
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                 final Calendar calendar = Calendar.getInstance();
                 calendar.set(year, monthOfYear, dayOfMonth);
-                deadlineDate = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss", locale).format(new Date(calendar.getTimeInMillis()));
+                deadlineDate = new SimpleDateFormat("yyyy-MM-dd", locale).format(new Date(calendar.getTimeInMillis()));
                 mDeadLine.setText(formatter.format(calendar.getTime()));
                 Log.d("TAGG", new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss", locale).format(new Date(calendar.getTimeInMillis())) + " SINIII");
             }
