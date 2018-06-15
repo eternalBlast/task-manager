@@ -14,6 +14,6 @@ Task Manager is an Android app that can handles tasks and staffs management. The
 Fork this project and open up pull request
 
 # Screenshots
-![task1] (https://github.com/eternalBlast/task-manager/blob/master/screenshots/task1.JPG)
+![task1](https://github.com/eternalBlast/task-manager/blob/master/screenshots/task1.JPG)
 ![stack Overflow](http://lmsotfy.com/so.png)
 
