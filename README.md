@@ -15,6 +15,4 @@ Fork this project and open up pull request
 
 # Screenshots
 ![alt text]https://github.com/eternalBlast/task-manager/blob/master/screenshots/task1.JPG
-![alt text]https://github.com/eternalBlast/task-manager/blob/master/screenshots/task2.JPG
-![alt text]https://github.com/eternalBlast/task-manager/blob/master/screenshots/task3.JPG
 
