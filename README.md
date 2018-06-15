@@ -15,5 +15,7 @@ Fork this project and open up pull request
 
 # Screenshots
 ![task1](https://github.com/eternalBlast/task-manager/blob/master/screenshots/task1.JPG)
-![stack Overflow](http://lmsotfy.com/so.png)
+![task1](https://github.com/eternalBlast/task-manager/blob/master/screenshots/task2.JPG)
+![task1](https://github.com/eternalBlast/task-manager/blob/master/screenshots/task3.JPG)
+
 
